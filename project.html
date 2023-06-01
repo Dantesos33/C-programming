@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C Programs</title>
+  <link rel="icon" href="c.png">
+  
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <style>
+    *{
+      margin: 0 auto;
+      padding: 0;
+      font-family: Arial;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+      font-size: 20px;
+    }
+    
+    .container{
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+    }
+   
+    .logo{
+      min-height: 50px;
+      font-weight: bold;
+      float: left;
+      font-family: monospace;
+      letter-spacing: 5px;
+      padding-left: 2%;
+      line-height: 50px;
+      text-transform: uppercase;
+    }
+    
+    .navbar{
+      width: 100%;
+      min-height: 50px;
+      background-color: #0002;
+    }
+    
+    .menu{
+      min-height: 50px;
+      float: right;
+      line-height: 50px;
+      padding-right: 2%;
+    }
+    
+    .menu ul li{
+      display: inline-block;
+      margin: 0 5px;
+    }
+    
+    .menu ul li a{
+      color: black;
+      text-transform: uppercase;
+      padding: 7px 13px;
+      border-radius: 3px;
+    }
+    
+    .active,a:hover{
+      background-color: #0006;
+      transition: 0.5s;
+    }
+    
+    .checkbtn{
+      font-size: 30px;
+      color: black;
+      float: right;
+      margin-top: 1px;
+      font-weight: 500;
+      display: none;
+      margin-right: 40px;
+    }
+    
+    #check{
+      display: none;
+    }
+    
+     .main {
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+     }
+    
+     .cards {
+       width: 220px;
+       height: 410px;
+       margin: 20px;
+       border-radius: 15px;
+       background-color: #0002;
+     }
+    
+     .card_img {
+       width: 100%;
+       height: 220px;
+       background: url('c.png');
+       background-size: cover;
+       background-position: center;
+       margin-bottom: 20px;
+       border-radius: 15px 15px 0 0;
+     }
+    
+     .cards h1 {
+       width: 100%;
+       height: 20px;
+       text-align: center;
+       font-size: 14px;
+       font-family: Arial;
+       font-weight: 800;
+       letter-spacing: 1.5px;
+       margin-bottom: 20px;
+     }
+    
+     .cards p {
+       width: 100%;
+       height: 50px;
+       text-align: center;
+       font-size: 12px;
+       font-family: 'Times New Roman';
+     }
+    
+     .cards a {
+       color: white;
+       text-align: center;
+       padding: 15px 20px;
+       background-color: black;
+       display: block;
+       border-radius: 15px;
+       margin: 20px 40px;
+     }
+    
+    footer{
+      text-align: center;
+      background-color: #0002;
+      top: 100%;
+      bottom: 0;
+      position: relative;
+      min-height: 50px;
+      min-width: 100%;
+      font-size: 25px;
+      line-height: 50px;
+    }
+    
+    @media(max-height: 952px){
+      
+      footer{
+        font-size: 16px;
+      }
+      
+      .logo{
+        font-size: 20px;
+        padding-left: 40px;
+        letter-spacing: 2px;
+      }
+      
+      .menu ul li a{
+        font-size: 16px;
+      }
+    }
+    
+    @media(max-height: 858px){
+      
+      footer{
+        font-size: 16px;
+      }
+      
+      .logo{
+        font-size: 16px;
+      }
+      .checkbtn{
+        display: block;
+      }
+      
+      .menu ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #ffffff;
+        top: 50px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+      
+      .menu ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      
+      .menu ul li a{
+        font-size: 20px;
+      }
+      
+      a:hover,a.active{
+        background: none;
+        color: black;
+      }
+      
+      #check:checked ~ .menu ul{
+        left: 0;
+      }
+      
+    }
+  </style>
+</head>
+
+<body>
+  
+    <div class="container">
+    
+  <div class="header">
+    <nav class="navbar">
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i>Menu</i>
+  </label>
+  <div class="logo">C.programs</div>
+  <div class="menu">
+ <ul>
+   <li><a href="home.html">Home</a></li>
+   <li><a href="labtask.html">Lab Tasks</a></li>
+   <li><a href="assignments.html">Assignments</a></li>
+   <li><a class="active" href="project.html">Projects</a></li>
+ </ul>
+  </div>
+    </nav>
+     </div>
+    
+    <section class="main">
+      <div class="cards">
+        <div class="card_img"></div>
+        <h1>Project proposal</h1>
+        <p>This is the Project Proposal of PF you can download the zip file from here.</p>
+        <a href="#">Download</a>
+      </div>
+           <div class="cards">
+             <div class="card_img"></div>
+             <h1>Coming Soon!</h1>
+             <p>Coming Soon!</p>
+             <a href="#">Download</a>
+           </div>
+                 <div class="cards">
+                   <div class="card_img"></div>
+                   <h1>Coming Soon!</h1>
+                   <p>Coming Soon!</p>
+                   <a href="#">Download</a>
+                 </div>
+                 
+                  <div class="cards">
+                    <div class="card_img"></div>
+                    <h1>Coming Soon!</h1>
+                    <p>Coming Soon!</p>
+                    <a href="#">Download</a>
+                  </div>
+                   <div class="cards">
+                     <div class="card_img"></div>
+                     <h1>Coming Soon!</h1>
+                     <p>Coming Soon!</p>
+                     <a href="#">Download</a>
+                   </div>
+                   <div class="cards">
+                     <div class="card_img"></div>
+                     <h1>Coming Soon!</h1>
+                     <p>Coming Soon!</p>
+                     <a href="#">Download</a>
+                   </div>
+                   
+                   <div class="cards">
+                     <div class="card_img"></div>
+                     <h1>Coming Soon!</h1>
+                     <p>Coming Soon!</p>
+                     <a href="#">Download</a>
+                   </div>
+                    <div class="cards">
+                      <div class="card_img"></div>
+                      <h1>Coming Soon!</h1>
+                      <p>Coming Soon!</p>
+                      <a href="#">Download</a>
+                    </div>
+                    <div class="cards">
+                      <div class="card_img"></div>
+                      <h1>Coming Soon!</h1>
+                      <p>Coming Soon!</p>
+                      <a href="#">Download</a>
+                    </div>
+                    
+                    <div class="cards">
+                      <div class="card_img"></div>
+                      <h1>Coming Soon!</h1>
+                      <p>Coming Soon!</p>
+                      <a href="#">Download</a>
+                    </div> <div class="cards">
+                       <div class="card_img"></div>
+                       <h1>Coming Soon!</h1>
+                       <p>Coming Soon!</p>
+                       <a href="#">Download</a>
+                     </div>
+                     <div class="cards">
+                       <div class="card_img"></div>
+                       <h1>Coming Soon!</h1>
+                       <p>Coming Soon!</p>
+                       <a href="#">Download</a>
+                     </div>
+                     <div class="cards">
+                       <div class="card_img"></div>
+                       <h1>Coming Soon!</h1>
+                       <p>Coming Soon!</p>
+                       <a href="#">Download</a>
+                     </div>
+                  </section>
+    
+    <footer>
+      Copyright 2022-2023. All Rights Reserved.
+    </footer>
+    
+</div>
+
+</body>
+
+</html>
